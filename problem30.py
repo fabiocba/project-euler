@@ -1,4 +1,6 @@
-#import math.*
+#!/usr/bin/python
+
+import math
 
 def fifth_power_sum(number):
     soma = 0
@@ -7,7 +9,7 @@ def fifth_power_sum(number):
         soma += pow(int(i), 5)
     return soma
 
-def __main__():
+def main():
     flag = 1
     count = 0
 
@@ -23,4 +25,4 @@ def __main__():
 
     print(numbers)
 
-__main__()
+main()
