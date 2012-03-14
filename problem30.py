@@ -9,20 +9,18 @@ def fifth_power_sum(number):
         soma += pow(int(i), 5)
     return soma
 
-def main():
-    flag = 1
-    count = 0
 
-    soma = 0
-    numbers = []
+flag = 1
+count = 0
 
-    while count<100000:
-        soma = fifth_power_sum(count)
-        count +=1
+soma = 0
+numbers = []
 
-        if soma==count:
-            numbers.append(soma)
+while count<100000:
+	soma = fifth_power_sum(count)
+	count +=1
 
-    print(numbers)
+	if soma==count:
+		numbers.append(soma)
 
-main()
+print(numbers)

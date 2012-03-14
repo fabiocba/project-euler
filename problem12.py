@@ -1,7 +1,9 @@
+#!/usr/bin/python
+
 import math
-import time
 
 sums = {1: 1}
+
 def somatorio(n):
     if n in sums: return sums[n]
     sums[n] = n + somatorio(n-1)    
@@ -38,13 +40,10 @@ def numDivisores(n):
         
     return numDiv
 
-def main():
-    divs = i = triangulo = 0
-    while (divs<500):
-        i = i + 1
-        triangulo = somatorio(i)
-        divs = numDivisores(triangulo)
-    print divs
-    print triangulo
-    
-main()
+divs = i = triangulo = 0
+while (divs<500):
+    i = i + 1
+    triangulo = somatorio(i)
+    divs = numDivisores(triangulo)
+print divs
+print triangulo

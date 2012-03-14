@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def isAmicable(n):
     s1=s2=0
     for i in range(1,n):
@@ -14,18 +16,12 @@ def isAmicable(n):
         
     return
 
-def main():
-    amicables = []
-    for i in range(1,10000):
-        if i not in amicables:
-            t = isAmicable(i)
-            if t :
-                amicables.append(i)
-                amicables.append(t)
-            
-    return amicables
-
-print sum(main())
-
-#print sum([220, 284, 1184, 1210, 2620, 2924, 5020, 5564, 6232, 6368])
-
+amicables = []
+for i in range(1,10000):
+    if i not in amicables:
+        t = isAmicable(i)
+        if t :
+            amicables.append(i)
+            amicables.append(t)
+        
+print sum(amicables)

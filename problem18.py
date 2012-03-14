@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 a = []
 a.append([75])
 a.append([95,64])

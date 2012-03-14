@@ -1,9 +1,7 @@
-def main() :
-    total = 0
-    f = open('./150.txt')
-    for line in f:
-        total = total + int(line)
+#!/usr/bin/python
 
-    return total
-    
-print main()
+total = 0
+f = open('./150.txt')
+for line in f:
+	total = total + int(line)
+print total
